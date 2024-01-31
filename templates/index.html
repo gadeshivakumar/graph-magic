@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Carter+One&family=Caveat:wght@700&family=Dosis:wght@700&family=DynaPuff:wght@400;500;700&family=Gabarito:wght@600&family=IBM+Plex+Mono:ital,wght@1,700&family=Merriweather+Sans:wght@300&family=Nunito&family=Pacifico&family=Playpen+Sans&family=Poppins:ital,wght@0,400;1,500;1,900&display=swap" rel="stylesheet">
+
+   
+
+
+<title>Graph Visualisation</title>
+  </head>
+  <body>
+
+    <div class="navbar">
+    
+      <h1>Graph Magic</h1>
+      
+    </div>
+   
+    <div class="nav">
+   
+
+    <div class="content1" >
+      <div class="mySlides">
+        <div class="img10">
+          
+        </div>
+        <div class="t1">
+       <div class="text">
+           <h1>Graph</h1>
+           
+           <p>
+               A Graph is a non-linear data structure consisting of vertices and edges. The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(E, V).
+           </p>
+       </div>
+      </div>
+      </div>
+      <div class="mySlides">
+        <div class="img20">
+          
+        </div>
+        <div class="t1">
+       <div class="text">
+           <h1>Undirected Graph</h1>
+           <p>An undirected graph is a type of graph where the edges have no specified direction assigned to the them.</p>
+       </div>
+      </div>
+      </div>
+      <div class="mySlides">
+        <div class="img30">
+          
+        </div>
+        <div class="t1">
+        <div class="text">
+           <h1>Directed Graph</h1>
+           <p>
+               A directed graph is defined as a type of graph where the edges have a direction associated with them.
+           </p>
+       </div>
+      </div>
+      </div>
+      <div class="mySlides">
+        <div class="img40">
+          
+        </div>
+        
+        <div class="t1">
+       <div class="text">
+           <h1>Weighted Graph</h1>
+           <p>
+               A weighted graph is defined as a special type of graph in which the edges are assigned some weights which represent cost, distance, and many other relative measuring units.
+           </p>
+       </div>
+      
+      </div>
+    </div>
+     </div>
+
+
+    </div>
+      
+     <div class="fg">
+
+      <div class="card">
+        <div class="wrapper">
+          <img alt="bg" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/248eb242-02f4-4319-a218-8fa9cbe09d57/dfs2j3i-ef0ff095-ea23-4203-bcd5-ea7fce245f6e.png/v1/fit/w_600,h_600,q_70,strp/character_magician_by_rottenfish88_dfs2j3i-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvMjQ4ZWIyNDItMDJmNC00MzE5LWEyMTgtOGZhOWNiZTA5ZDU3XC9kZnMyajNpLWVmMGZmMDk1LWVhMjMtNDIwMy1iY2Q1LWVhN2ZjZTI0NWY2ZS5wbmciLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.W3ZJiK1JmErQOFGGySe5aRzE2Ds1CCelZuk34JN5Fhc" class="cover-image" />
+        </div>
+        <img src="static/css/title.png" class="title" alt="title"/>
+        <img src="static/css/magic.png" class="character" alt="magic" />
+      </div>
+    
+      <form id="graph-form">
+      
+          <div class="form">
+              <label for="nodes">Enter nodes (comma-separated):</label><br>
+          <input type="text" id="nodes" name="nodes" placeholder="nodes" required><br><br>
+      
+          <label for="edges">Enter edges (comma-separated, e.g., 1 2,2 3):</label><br>
+          <input type="text" id="edges" name="edges" placeholder="edges" required><br><br>
+      
+          <label for="graph_type">Select graph type</label><br>
+          <select id="graph_type" name="graph_type">
+            <option value="directed">Directed</option>
+            <option value="undirected">Undirected</option>
+           
+          </select><br><br>
+        
+         
+      
+      
+      <button type="submit" class="glow-on-hover" role="button" >
+       <a href="#graph"> Create</a></button>
+
+          </div>
+      
+      
+      </form>
+      
+      </div>
+    
+      <div class="gr" id="graph">
+        <div class="hat"></div>
+    <div id="graph-container" >
+       </div>
+ </div>
+
+ <div class="box">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  <div class="meet">
+
+      <h1>Meet THe Magicians</h1>
+      
+  </div>
+</div>
+ 
+
+
+ <div class="con" >
+  <div class="myteam">
+    <div class="img100">
+      
+    </div>
+    <div class="t10">
+   <div class="text10">
+       <h1>Gade Shiva Kumar</h1>
+       <br>
+       <h2>CSE-M</h2>
+       <br>
+       <h3>22EG105M39</h3>
+       
+   </div>
+  </div>
+  </div>
+  <div class="myteam">
+   
+    <div class="t10">
+   <div class="text10">
+    <h1>Ramavath Naresh</h1>
+    <br>
+    <h2>CSE-M</h2>
+    <br>
+    <h3>22EG105M60</h3>
+   </div>
+  </div>
+
+  <div class="img200">
+      
+  </div>
+  </div>
+  <div class="myteam">
+    <div class="img300">
+      
+    </div>
+    <div class="t10">
+    <div class="text10">
+      <h1>Anupala Nishit</h1>
+      <br>
+      <h2>CSE-M</h2>
+      <br>
+      <h3>22EG105M04</h3>
+   </div>
+  </div>
+  </div>
+  <div class="myteam">
+    <div class="img400">
+      
+    </div>
+    
+    <div class="t10">
+   <div class="text10">
+    <h1>Diddi Krishna</h1>
+    <br>
+    <h2>CSE-M</h2>
+    <br>
+    <h3>22EG105M37</h3>
+   </div>
+  
+  </div>
+</div>
+
+<div class="myteam">
+  <div class="img500">
+    
+  </div>
+  <div class="t10">
+  <div class="text10">
+    <h1>Shyam Kumar</h1>
+    <br>
+    <h2>CSE-M</h2>
+    <br>
+    <h3>22EG105M12</h3>
+ </div>
+</div>
+</div>
+
+ </div>
+
+ <footer class="graphmagic">
+  <div class="logo"></div>
+ <div class="company">
+  &#169 COPYRIGHT : Graph Magic
+ </div>
+ </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+ 
+
+<script>
+
+  
+var myIndex = 0;
+ carousel();
+
+ function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "flex";  
+  setTimeout(carousel, 2000); 
+}
+
+
+  function updateGraph() {
+    $.ajax({
+      type: "POST",
+      url: "/create",
+      data: $("#graph-form").serialize(),
+      success: function(data) {
+        // Display the graph image using a data URL
+        $("#graph-container").html(`<img src="${data.img_url}" alt="Graph" width="100%" height="100%">`);
+      },
+      error: function(error) {
+        console.error("An error occurred:", error);
+      }
+    });
+  }
+
+  $(document).ready(function() {
+    $("#graph-form").submit(function(event) {
+      event.preventDefault();
+      updateGraph();
+    });
+    setInterval(function() {
+      updateGraph();
+    }, 5000);
+  });
+
+
+  var myt = 0;
+ carousel1();
+
+ function carousel1() {
+  var j;
+  var y = document.getElementsByClassName("myteam");
+  for (j = 0; j < y.length; j++) {
+    y[j].style.display = "none";  
+  }
+  myt++;
+  if (myt > y.length) {myt = 1}    
+  y[myt-1].style.display = "flex";  
+  setTimeout(carousel1, 2000); 
+}
+
+</script>
+</body>
+
+</html>
