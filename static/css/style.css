@@ -1,6 +1,257 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Akaya+Telivigala&family=Anton&family=Carter+One&family=Caveat:wght@700&family=Cinzel:wght@500&family=Courgette&family=Dosis:wght@700&family=DynaPuff:wght@400;500;700&family=Gabarito:wght@600&family=IBM+Plex+Mono:ital,wght@1,700&family=Koulen&family=Merriweather+Sans:wght@300&family=Nosifer&family=Nunito:wght@400;600&family=Pacifico&family=Playpen+Sans:wght@300;400&family=Poppins:ital,wght@0,400;1,500;1,900&family=Roboto+Mono:ital,wght@1,300&display=swap');
 
+
+
+  @media screen and (min-width: 769px) {
+    .navbar {
+        height: 15vh;
+    }
+
+    .nav {
+        height: 80vh;
+       
+    }
+
+    .gr{
+      margin-bottom: 10vh;
+    }
+
+    .fg {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       
+    }
+
+    .graphmagic{
+      height: 30vh;
+    }
+
+    .graphmagic .logo{
+      height: 20vh;
+    }
+    .content1{
+      height:80vh;
+      width: 100%;
+    }
+
+    .card{
+      height: 50vh;
+      width: 40%;
+      margin-top: 10%;
+      margin-left: 10%;
+    }
+
+    #graph-form{
+      height: 70vh;
+      width: 80vw;
+      margin-left: 10%;
+    }
+
+    #graph-container{
+        height: 70vh;
+    width: 60vw; 
+    }
+
+    .hat{
+      height: 80vh;
+      width:30%;
+    }
+
+    .box{
+      height: 15vh;
+      width: 50vw;
+    }
+
+    .con{
+      height: 70vh;
+      margin-top: 20vh;
+    }
+
+    .t10{
+      height: 70%;
+      width: 40%;
+      font-size: 20px;
+      color: white;
+    }
+
+    .t1
+    {
+      height: 90%;
+      width: 40%;
+    }
+    .img100{
+      height: 70%;
+      width: 20%;
+    }
+
+    .img200{
+      height: 70%;
+      width: 20%;
+    }
+
+    .img300{
+      height: 70%;
+      width: 20%;
+    }
+
+    .img400{
+      height: 70%;
+      width: 20%;
+    }
+
+    .img500{
+      height: 70%;
+      width: 20%;
+    }
+
+    .img10{
+      height: 90%;
+      width: 30%;
+    }
+
+    .img20{
+      height: 90%;
+      width: 30%;
+    }
+
+    .img30{
+      height: 90%;
+      width: 30%;
+    }
+
+    .img40{
+      height: 90%;
+      width: 30%;
+    }
+
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        height: 10vh;
+    }
+
+    .nav {
+        height: 40vh;
+       
+    }
+
+    .content1
+    {
+      height: 50vh;
+      width:100%;
+    }
+
+    .t1
+    {
+      height: 80%;
+      width: 60%;
+    }
+    .fg {
+        height: 70vh;
+       margin-top: 20vh;
+    }
+
+    .card{
+      height: 30vh;
+      width: 50%;
+      margin-top: 15%;
+      margin-left: 5%;
+    }
+
+    #graph-form{
+      height: 45vh;
+      width: 100vw;
+      margin-top: 15%;
+      margin-left: 20%;
+    }
+
+    
+    #graph-container{
+      height: 50vh;
+  width: 60vw; 
+  }
+
+  .hat{
+    height: 20vh;
+    width:30%;
+  }
+
+  .box{
+    width: 80vw;
+  height: 10vh;
+  }
+
+  .con{
+    height: 50vh;
+    /* margin-top: 5vh; */
+  }
+
+  .t10{
+    height: 50%;
+    width: 50%;
+    font-size: 10px !important;
+    color: white;
+  }
+
+  .img100{
+    height: 50%;
+    width: 40%;
+  }
+
+  .img200{
+    height: 50%;
+    width: 40%;
+  }
+
+  .img300{
+    height: 50%;
+    width: 40%;
+  }
+
+  .img400{
+    height: 50%;
+    width: 40%;
+  }
+
+  .img500{
+    height: 50%;
+    width: 40%;
+  }
+
+  .img10{
+    height: 50%;
+    width: 30%;
+  }
+
+  .img20{
+    height: 50%;
+    width: 30%;
+  }
+
+  .img30{
+    height: 50%;
+    width: 30%;
+  }
+
+  .img40{
+    height: 50%;
+    width: 30%;
+  }
+
+  .graphmagic{
+    height: 15vh;
+  }
+
+  .graphmagic .logo{
+    height: 8vh;
+  }
+
+}
   html
   {
     scroll-behavior:smooth;
@@ -17,7 +268,7 @@
 
   .nav
   {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color:black;
     background-repeat: no-repeat;
@@ -29,7 +280,7 @@
   
   .navbar
   {
-    height: 15vh;
+    /* height: 15vh; */
     width: 100%;
     text-align: center;
     color:#e6e200;
@@ -50,8 +301,8 @@
 }
 
 .content1 {
-    height: 80vh;
-    width:100%;
+    /* height: 80vh; */
+    /* width:100%; */
     background-repeat: no-repeat;
     background-size: cover;
   
@@ -59,8 +310,8 @@
 }
 
 .t1 {
-    height: 90%;
-    width: 40%;
+    /* height: 90%;
+    width: 40%; */
 border-radius: 4em;
 text-align: center;
 background:#1b2124;
@@ -86,9 +337,9 @@ margin-left: 5%;
 
 .img10
 {
-    height: 90%;
-    width: 30%;
-    background-image: url(g.png);
+    /* height: 90%;
+    width: 30%; */
+    background-image: url(g.webp);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat ;
@@ -100,9 +351,9 @@ margin-left: 5%;
 
 .img20
 {
-    height: 90%;
-    width: 30%;
-    background-image: url(ud.png);
+    /* height: 90%;
+    width: 30%; */
+    background-image: url(ud.webp);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat ;
@@ -113,9 +364,9 @@ margin-left: 5%;
 
 .img30
 {
-    height: 90%;
-    width: 30%;
-    background-image: url(dg.png);
+    /* height: 90%;
+    width: 30%; */
+    background-image: url(dg.webp);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat ;
@@ -126,9 +377,9 @@ margin-left: 5%;
 
 .img40
 {
-    height: 90%;
-    width: 30%;
-    background-image: url(wg.png);
+    /* height: 90%;
+    width: 30%; */
+    background-image: url(wg.webp);
     background-size: contain;
     background-position: center;
     background-repeat:no-repeat ;
@@ -141,14 +392,14 @@ margin-left: 5%;
 
 .fg
 {
-  height: 100vh;
+  /* height: 100vh; */
   width: 100%;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
+  /* display: flex;
+  align-items: center; */
   background-color: black;
   color: rgb(18, 17, 17);
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-size: cover; 
 }
 
@@ -162,16 +413,16 @@ margin-left: 5%;
 }
 
 .card {
-  height: 50vh;
-  width:40%;
+  /* height: 50vh; */
+  /* width:40%; */
   position: relative;
   display: flex;
   background-color:black !important;
   justify-content: center;
   align-items: flex-end;
   perspective: 2500px;
-  margin-left: 10%;
-  margin-top: 10%;
+  /* margin-left: 10%; */
+  /* margin-top: 10%; */
  
 }
 
@@ -230,6 +481,7 @@ margin-left: 5%;
 .card:hover .wrapper::before,
 .wrapper::after {
   opacity: 1;
+ 
 }
 
 .card:hover .wrapper::after {
@@ -260,16 +512,16 @@ margin-left: 5%;
 
 #graph-form
 {
-    height:70vh;
-    width:80vw;
+    /* height:70vh; */
+    /* width:80vw; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 15%;
+    /* margin-left: 15%; */
     border-radius: 50px;
-  display: flex;
+  /* display: flex;
     align-items: center;
-    text-decoration: solid;
+    text-decoration: solid; */
     
 }
 
@@ -425,8 +677,8 @@ option
 #graph-container
 {
    
-    height: 70vh;
-    width: 60vw;
+    /* height: 70vh;
+    width: 60vw; */
   border-radius: 20px;
   overflow: hidden;
    
@@ -443,14 +695,14 @@ option
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10vh;
+  /* margin-bottom: 10vh; */
  }
 
  .hat
  {
-  height: 80vh;
-  width:30%;
-  background-image: url(hat.png);
+  /* height: 80vh;
+  width:30%; */
+  background-image: url(hat.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -461,8 +713,7 @@ option
   position: absolute;
  
   transform: translate(-50%, -50%);
-  width: 35vw;
-  height: 15vh;
+  
   background: black;
   box-sizing: border-box;
   border-radius: 50px;
@@ -581,27 +832,27 @@ background-color: black;
 }
 
 .con {
-  height: 70vh;
+  /* height: 70vh; */
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;
   border-bottom: 2px solid black;
-  margin-top: 20vh;
+  /* margin-top: 20vh; */
 
 }
 
 .t10 {
-  height: 70%;
-  width: 40%;
+  /* height: 70%;
+  width: 40%; */
 border-radius: 45px;
 text-align: center;
-font-size: 20px;
+/* font-size: 20px; */
 font-family: poppins;
 display: flex;
 justify-content: center;
 align-items: center;
 background:#1b2124;
-  color: greenyellow;
+  /* color: greenyellow; */
 }
 
 
@@ -609,9 +860,9 @@ background:#1b2124;
 
 .img100
 {
-    height: 70%;
-    width: 20%;
-    background-image: url(shiv.jpeg);
+    /* height: 70%;
+    width: 20%; */
+    background-image: url(shiv.webp);
     background-size: cover;
     border-radius: 50px;
 overflow: hidden;
@@ -622,9 +873,9 @@ overflow: hidden;
 
 .img200
 {
-    height: 70%;
-    width: 20%;
-    background-image: url(nar.png);
+    /* height: 70%;
+    width: 20%; */
+    background-image: url(nar.webp);
     background-size:cover ;
     background-position:center ;
     background-repeat:no-repeat ;
@@ -635,10 +886,10 @@ overflow: hidden;
 
 .img300
 {
-    height: 70%;
-    width: 20%;
+    /* height: 70%;
+    width: 20%; */
     background-color: red;
-    background-image: url(nis.jpeg);
+    background-image: url(nis.webp);
     background-size: cover;
     background-position:inherit;
     background-repeat:no-repeat ;
@@ -648,9 +899,9 @@ overflow: hidden;
 
 .img400
 {
-    height: 70%;
-    width: 20%;
-    background-image: url(krish.jpeg);
+    /* height: 70%;
+    width: 20%; */
+    background-image: url(krish.webp);
     background-size: cover;
     background-position:left;
     background-repeat:no-repeat ;
@@ -662,9 +913,9 @@ overflow: hidden;
 
 .img500
 {
-    height: 70%;
-    width: 20%;
-    background-image: url(shyam.png);
+    /* height: 70%;
+    width: 20%; */
+    background-image: url(shyam.webp);
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat ;
@@ -678,21 +929,23 @@ overflow: hidden;
 
 .graphmagic
 {
-  height: 30vh;
+  /* height: 30vh; */
   width: 100%;
-  background-color:rgb(246, 249, 245);
+  background-color:#5e5e6f;
   border-radius: 25px;
+  opacity: .5;
   
 }
 
 .graphmagic .logo
 {
-  height: 20vh;
+  /* height: 20vh; */
   width: 35vw;
-  background-image: url(logo.png);
+  background-image: url(logo.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  aspect-ratio: contain;
   margin-left: 33%;
 }
 
